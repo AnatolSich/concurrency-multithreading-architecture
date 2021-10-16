@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+@SuppressWarnings("unused")
 public class SynchronizedThreadSafeMap<K, V> implements Map<K, V> {
 
     private final Set<Map.Entry<K, V>> entrySet = new HashSet<>();
@@ -62,7 +63,7 @@ public class SynchronizedThreadSafeMap<K, V> implements Map<K, V> {
 
     @Override
     public synchronized Set<K> keySet() {
-        return null;
+        return Set.of();
     }
 
     @Override

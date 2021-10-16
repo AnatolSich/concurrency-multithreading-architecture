@@ -7,6 +7,7 @@ import java.util.Set;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
 
+@SuppressWarnings("unused")
 public class ThreadSafeMap<K, V> implements Map<K, V> {
     private final ReentrantLock lock = new ReentrantLock();
     private final Set<Map.Entry<K, V>> entrySet = new HashSet<>();
