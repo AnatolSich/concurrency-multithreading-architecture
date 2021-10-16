@@ -7,9 +7,10 @@ import java.util.List;
 import java.util.Random;
 
 @Slf4j
+@SuppressWarnings("InfiniteLoopStatement")
 public class DeadlockResolve {
 
-    public static final Long SLEEP = 10L;
+    public static final Integer SLEEP = 10;
     private static final List<Integer> listNumbers = new ArrayList<>();
     private final Random random = new Random();
 
@@ -29,7 +30,7 @@ public class DeadlockResolve {
 
     private void sleepMillis() {
         try {
-            long sl = random.nextInt(10) + 10;
+            long sl = random.nextInt(SLEEP) + SLEEP;
             log.info("Sleep = {}", sl);
             Thread.sleep(sl);
         } catch (InterruptedException e) {
@@ -55,7 +56,6 @@ public class DeadlockResolve {
     private class PrintSum implements Runnable {
         @Override
         public void run() {
-
             while (true) {
                 synchronized (listNumbers) {
                     long sum = listNumbers.stream()

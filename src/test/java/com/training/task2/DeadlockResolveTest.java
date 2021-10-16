@@ -7,7 +7,7 @@ public class DeadlockResolveTest {
     private final DeadlockResolve deadlockResolve = new DeadlockResolve();
 
     @Test
-    public void executeTest() throws InterruptedException {
+    public void executeTest() {
         deadlockResolve.go();
     }
 }
