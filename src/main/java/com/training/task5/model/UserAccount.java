@@ -12,10 +12,6 @@ public class UserAccount implements Serializable {
     private Currency accountCurrency;
     private BigDecimal accountAmount;
 
-    public UserAccount(String name) {
-        this.name = name;
-    }
-
     public UserAccount(String name, Currency accountCurrency, BigDecimal accountAmount) {
         this.name = name;
         this.accountCurrency = accountCurrency;

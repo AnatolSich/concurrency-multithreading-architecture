@@ -45,7 +45,7 @@ public class ClassicProducerAndConsumerLinkedList extends ProducerAndConsumer {
             synchronized (this) {
                 if (queue.isEmpty())
                     this.wait();
-                int value = queue.poll();
+                Integer value = queue.poll();
                 log.info("LinkedList | Consumer: {}", value);
                 this.notifyAll();
                 if (Thread.currentThread().isInterrupted()) {

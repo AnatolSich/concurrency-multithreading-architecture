@@ -12,6 +12,7 @@ public class UserAccountDaoImpl implements UserAccountDao {
     // Create folder and add full path to it
     private static final String FILE_STORAGE = "/src/main/resources/accountFiles/";
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public void saveUserAccount(UserAccount account) {
         String fullFileName = createFileName(account.getName(), account.getAccountCurrency());
         File file = new File(fullFileName);
