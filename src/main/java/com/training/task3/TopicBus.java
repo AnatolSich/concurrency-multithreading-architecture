@@ -51,7 +51,7 @@ public class TopicBus {
                         Thread.currentThread().interrupt();
                     }
                 }
-                int message = queue.poll();
+                Integer message = queue.poll();
                 log.info("{} | consumer message: \"{}\"", topic, message);
                 this.notifyAll();
                 if (Thread.currentThread().isInterrupted()) {

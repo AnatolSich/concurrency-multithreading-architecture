@@ -14,7 +14,8 @@ public class MessageFlow {
 
         for (int i = 0; i < TOPICS_NUMBER; i++) {
             String topicName = "topic" + i;
-            messageBus.put(topicName, new PriorityQueue<>());
+      //      messageBus.put(topicName, new PriorityQueue<>());
+            messageBus.put(topicName, new LinkedList<>());
             TopicBus topicBus = new TopicBus(messageBus, topicName);
             Thread producer = new Thread(topicBus::produce);
             Thread consumer = new Thread(topicBus::consume);
