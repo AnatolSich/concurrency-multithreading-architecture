@@ -17,6 +17,7 @@ public class BlockingObjectPool {
     }
 
     //Gets object from pool or blocks if pool is empty
+    @SuppressWarnings("UnusedReturnValue")
     public synchronized Object get() {
         if (pool.isEmpty()) {
             try {

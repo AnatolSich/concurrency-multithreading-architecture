@@ -1,7 +1,6 @@
 package com.training.task3;
 
 import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class MessageFlow {
 

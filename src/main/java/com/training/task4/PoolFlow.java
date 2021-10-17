@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Random;
 
 @Slf4j
+@SuppressWarnings("BusyWait")
 public class PoolFlow {
 
     public static final int WORK_TIME = 25_000;
