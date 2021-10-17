@@ -17,6 +17,7 @@ public class DeadlockResolve {
     public static void main(String[] args) {
         new DeadlockResolve().go();
     }
+
     public void go() {
         runJob(new AddJod());
         runJob(new PrintSqrtSum());

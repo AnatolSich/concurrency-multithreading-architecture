@@ -109,4 +109,10 @@ When both versions are done compare their performance (ops/sec).
 
 All running tools are in test
 
+#Task2
 
+Run main() in DeadlockResolve class
+
+#Task
+
+Run MessageFlowTest class
