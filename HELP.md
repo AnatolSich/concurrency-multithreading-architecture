@@ -120,3 +120,13 @@ Run MessageFlowTest class
 #Task4
 
 Run PoolFlowTest class
+
+#Task5
+
+1. Create storage folder and add full path to it in UserAccountDaoImpl
+2. Run CurrencyExchangeTest class
+
+#Task6
+
+1. Set CAPACITY and ESTIMATION_TIME in Application class
+2. Run ApplicationTest class
